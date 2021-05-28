@@ -1,0 +1,145 @@
+body {
+  background-image: url(./images/bg.png);
+  background-position: center center fixed;
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: "Fipps";
+  src: url(./fonts/Fipps-Regular.eot);
+  src: url(./fonts/Fipps-Regular.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/Fipps-Regular.woff2) format("woff2"),
+    url(./fonts/Fipps-Regular.woff) format("woff"),
+    url(./fonts/Fipps-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url(./fonts/Minecraft.eot);
+  src: url(./fonts/Minecraft.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/Minecraft.woff2) format("woff2"),
+    url(./fonts/Minecraft.woff) format("woff"),
+    url(./fonts/Minecraft.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rainyhearts";
+  src: url(./fonts/rainyhearts.eot);
+  src: url(./fonts/rainyhearts.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/rainyhearts.woff2) format("woff2"),
+    url(./fonts/rainyhearts.woff) format("woff"),
+    url(./fonts/rainyhearts.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "bible-verse inspirational-quote"
+    "joke random-quote";
+  grid-template-columns: 350px 350px;
+  grid-template-rows: auto;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.box {
+  max-width: 100%;
+}
+
+.button {
+  max-width: 100%;
+  height: 109px;
+  background: url("https://www.pngkey.com/png/full/452-4529843_pokemon-dialog-box-pixel-art.png")
+    no-repeat center top;
+  background-size: 100%;
+  font-family: "Minecraft";
+  font-size: 25px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.header {
+  font-family: "Fipps";
+  text-align: center;
+  width: 700px;
+  height: 100px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.content {
+  font-family: "rainyhearts";
+  font-size: 25px;
+  grid-area: content;
+  background: url("https://www.pngkey.com/png/full/452-4529843_pokemon-dialog-box-pixel-art.png")
+    no-repeat center top;
+  background-size: 100%;
+  width: 850px;
+  height: 220px;
+  line-height: 1;
+  padding-block-start: 5px;
+  padding-block-end: 20px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.bible-verse {
+  grid-area: bible-verse;
+}
+
+.inspirational-quote {
+  grid-area: inspirational-quote;
+}
+
+.joke {
+  grid-area: joke;
+}
+
+.random-quote {
+  grid-area: random-quote;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* For mobile phones: */
+  .header {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .bible-verse {
+    width: 100%;
+  }
+
+  .joke {
+    width: 100%;
+  }
+
+  .random-quote {
+    width: 100%;
+  }
+
+  .inspirational-quote {
+    width: 100%;
+  }
+}
